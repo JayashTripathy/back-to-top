@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 
 function BackTop() {
-  const [scrollVal, setScrollVal] = useState(0);
 
   useEffect(() => {
     {/* -----------------------scroll logic----------------------- */}
@@ -11,8 +10,6 @@ function BackTop() {
       let scrolledCurrent = viewPortHeight + document.documentElement.scrollTop;
       let totalHeight = document.documentElement.scrollHeight;
       const value = Math.floor((scrolledCurrent / totalHeight) * 100);
-    
-      setScrollVal(value);
       
       let scrollbarWidth = document.getElementById("scrollbarWidth");
       let backToTop = document.getElementById("backToTop");
@@ -60,7 +57,7 @@ function BackTop() {
         }}
         className="aspect-square h-20 bg-gray-400  hover:opacity-100 fixed right-10  
                   rounded-full cursor-pointer  group  shadow-xl
-                  transition-all duration-300 ease-in-out z-10 border-0"
+                  transition-all duration-300 ease-in-out z-10 border-0 bottom-[-100px]"
       >
         <div className="aspect-square h-0  group-hover:h-full transition-all duration-200 animate-pulse 
                        ease-in-out bg-highlighting rounded-full absolute right-1/2 bottom-1/2 group-hover:right-0 
