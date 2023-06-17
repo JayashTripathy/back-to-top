@@ -1,0 +1,9 @@
+
+
+body{
+  @apply bg-secondary text-indigo-800;
+}
+
+section{
+  @apply min-h-screen w-screen flex justify-start items-center text-3xl font-bold pl-5 md:pl-20 ;
+}
