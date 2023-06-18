@@ -5,14 +5,17 @@ function App() {
 
 
   return (
-    <>
-      <BackTop/>
-      <section className=' bg-slate-50'>Scroll Down ⬇</section>
-      <section className=' bg-slate-100'>Click on bottom right button ⬆️</section>
-      <section className=' bg-slate-50'>yeah! thats it.😉</section>
-      <section className=' bg-slate-100'>yeah! thats it.😉</section>
-     
-    </>
+   
+      <div className="h-full w-full overflow-x-hidden">
+
+        <BackTop />
+        <section className=' bg-gray-900 text-white'>Scroll Down ⬇</section>
+        <section className=' bg-indigo-500  text-white'>Click on bottom right button ⬆️</section>
+        <section className=' bg-gray-900 text-white'>yeah! thats it.😉</section>
+        <section className=' bg-indigo-500 text-white'>yeah! thats it.😉</section>
+
+      </div>
+ 
   )
 }
 

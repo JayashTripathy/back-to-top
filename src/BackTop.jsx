@@ -43,9 +43,9 @@ function BackTop() {
       
       <div
         id="scrollbarWidth"
-        className={`h-2  bg-black  transition-all duration-300 flex items-center fixed top-0 left-0  ease-in-out`}
+        className={`h-2  bg-white  transition-all duration-300 flex items-center fixed top-0 left-0  ease-in-out`}
       >
-        <div className="absolute bg-black h-4 aspect-square right-0 rounded-full"></div>
+        <div className="absolute bg-white h-4 aspect-square right-0 rounded-full"></div>
       </div>
 
 
@@ -55,12 +55,12 @@ function BackTop() {
         onClick={() => {
           window.scrollTo({ top: 0, behavior: "smooth" });
         }}
-        className="aspect-square h-20 bg-gray-400  hover:opacity-100 fixed right-10  
+        className="aspect-square h-20 bg-gray-700  hover:opacity-100 fixed right-10  
                   rounded-full cursor-pointer  group  shadow-xl
-                  transition-all duration-300 ease-in-out z-10 border-0 bottom-[-100px]"
+                  transition-all duration-300 ease-in-out z-10 border-2 bottom-[-100px]"
       >
-        <div className="aspect-square h-0  group-hover:h-full transition-all duration-200 animate-pulse 
-                       ease-in-out bg-highlighting rounded-full absolute right-1/2 bottom-1/2 group-hover:right-0 
+        <div className="aspect-square h-0  group-hover:h-full transition-all duration-200 
+                       ease-in-out bg-white rounded-full absolute right-1/2 bottom-1/2 group-hover:right-0 
                       group-hover:bottom-0 cursor-pointer "></div>
       </button>
 
